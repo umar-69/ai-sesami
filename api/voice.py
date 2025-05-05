@@ -1,6 +1,5 @@
 from http.server import BaseHTTPRequestHandler
 import json
-from sesame_ai import SesameAI, TokenManager  # from the Sesame AI library
 
 class handler(BaseHTTPRequestHandler):
     def do_POST(self):
@@ -18,14 +17,9 @@ class handler(BaseHTTPRequestHandler):
                 user_query = ""
 
             if user_query:
-                # Initialize Sesame AI client and authenticate (e.g., create or use token)
-                client = SesameAI()
-                token_manager = TokenManager(client)
-                id_token = token_manager.get_valid_token()  # get a valid token (creates anon account if needed)
-
-                # For simplicity, let's use a placeholder response
-                # In a real implementation, you would use the Sesame AI client to get an actual response
-                ai_reply_text = f"You said: {user_query}. This is a placeholder response from the Sesame AI."
+                # For demonstration purposes, we'll use a placeholder response
+                # In a real implementation, you would call the Sesame AI API directly
+                ai_reply_text = f"You said: {user_query}. This is a response from the Sesame AI voice assistant."
                 
                 # Structure the response
                 response = {"reply": ai_reply_text}
