@@ -78,6 +78,7 @@ This project is designed to be deployed on Vercel. To deploy:
 
 MIT
 
-## Acknowledgements
+## Acknowledgements - new stuff
+
 
 This project uses the Sesame AI library by [ijub](https://github.com/ijub). 
