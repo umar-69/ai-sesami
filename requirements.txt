@@ -1,3 +1,8 @@
 requests>=2.25.0
 websocket-client>=1.2.0
-numpy>=1.19.0 
+numpy>=1.19.0
+# Add sesame_ai dependency (assuming it's accessible via path or Git URL during deployment)
+# If deploying via Vercel, ensure the submodule is checked out or install via Git URL
+# Example using Git URL (adjust if needed):
+sesame_ai @ git+https://github.com/ijub/sesame_ai.git
+# PyAudio is generally not needed/usable in a standard serverless environment 
