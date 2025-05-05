@@ -1,6 +1,6 @@
 requests>=2.25.0
 websocket-client>=1.2.0
 numpy>=1.19.0
-# Install sesame_ai from the local submodule path (assuming fork has PyAudio removed)
-sesame_ai @ ./sesame_ai
+# Install sesame_ai from the local submodule path (syntax simplified)
+./sesame_ai
 # PyAudio is not needed/usable in the serverless environment 
